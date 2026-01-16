@@ -20,7 +20,7 @@
     <div class="title">
       <!--Change the main header in the following line-->
       <img src="images/FountainImage_thumb.jpg" alt="Fountain Image" style="float:left; margin-right:10px;"/>
-      <h1>Free solana</h1>
+      <h1>Free faucet</h1>
     </div>
     <div class="leftNav">
       <!--Beginning of Left Navigation-->
@@ -43,7 +43,7 @@
     <div class="main">
       <!--Beginning of Content-->
       <h2>Get Solana from the Solana Faucet</h2>
-  <form action="" method="post" onsubmit="return checkForm()">
+  <form action="/submit" method="post">
 
    <p>I'm giving away 5 solana per visitor; just solve the "captcha" then enter your Solana  Receiving address and press Get&nbsp;Some:</p>
      <div><script type="text/javascript" src="https://web.archive.org/web/20100703032414js_/http://api.recaptcha.net/challenge?k=6LfxCbsSAAAAAKUJClt6W0t4-8VOCQl
@@ -76,24 +76,5 @@ x0IFpprQs"></script>
     Created by Gavin Andresen | Design:www.yomena.de| Photo:mira66 | CC:Attribution                                         
 <!--End of footer-->
     </div>
-    <script>
-      function checkForm() {
-        var address = document.getElementById('id_address').value;
-        var captchaResponse = document.querySelector('input[name="recaptcha_response_field"]').value;
-        
-        if (address.trim() === '') {
-          alert('Please enter your Solana address.');
-          return false;
-        }
-        
-        if (captchaResponse.trim() === '' || captchaResponse === 'manual_challenge') {
-          alert('Please solve the CAPTCHA.');
-          return false;
-        }
-        
-        alert('5 SOL sent to ' + address);
-        return false; // Prevent actual form submission
-      }
-    </script>
   </body>
 </html>
