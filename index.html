@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN"
+ "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+
+    <title>Free solanas</title>
+    <meta name="author" content="Gavin Andresen"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="title" content="The solana Faucet"/>
+    <meta name="description" content="The solana Faucet gives you free solanas to try out this newfangled cryptocurrency"/>
+    <meta name="google-site-verification" content="BjgejjmQuMOK4FzlDS6X1xXhCW7bb4Q7mVX1CD14ddA"/>
+    <link rel="stylesheet" type="text/css" href="css/fountain.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="image_src" href="images/FountainImage_thumb.jpg"/>
+  </head>
+  <body>
+
+    <div class="title">
+      <!--Change the main header in the following line-->
+      <h1>Free solana</h1>
+    </div>
+    <div class="leftNav">
+      <!--Beginning of Left Navigation-->
+
+        <p>746 SOL available</p>
+
+      <ul>
+        <li>Other Sites:</li>
+        <li>
+          <a href="https://solana.com">Solana.com</a>
+        </li>
+        <li>
+          <a href="https://solscan.io">Solscan</a>
+        </li>
+      </ul>
+      <!--End of Left Navigation-->
+    </div>
+    <div class="main">
+      <!--Beginning of Content-->
+
+
+  <h2>Get Solana from the Solana Faucet</h2>
+  <form action="" method="post" onsubmit="return checkForm()">
+
+   <p>I'm giving away 5 solana per visitor; just solve the "captcha" then enter your Solana  Receiving address and press Get&nbsp;Some:</p>
+     <div><script type="text/javascript" src="https://web.archive.org/web/20100703032414js_/http://api.recaptcha.net/challenge?k=6LfxCbsSAAAAAKUJClt6W0t4-8VOCQl
+x0IFpprQs"></script>                                                                                                                                            
+<noscript>
+  <iframe src="https://web.archive.org/web/20100703032414if_/http://api.recaptcha.net/noscript?k=6LfxCbsSAAAAAKUJClt6W0t4-8VOCQlx0IFpprQs" height="300" width="5
+00" frameborder="0"></iframe><br/>                                                                                                                                <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+  <input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
+</noscript>
+</div>
+     <p><label for="id_address">Your Solana Address:</label><input id="id_address" type="text" name="address" maxlength="35"/>
+      <input type="submit" value="Get Some!"/></p>
+
+  </form>
+      <h2>What is Solana?</h2>
+      <p>Solana is a fast, secure, and censorship-resistant blockchain providing the open infrastructure required for global adoption. Visit the Solana.com website for all the technical details.</p>
+      <h2>How do I get a Solana Receiving Address?</h2>
+      <p>Download and install a Solana wallet like Phantom or Solflare. It will show you your Solana address.
+      </p>
+      <h2>I've got SOL; how can I help?</h2>
+      <p>Send them to the Solana Faucet at address Fauc3t... and they'll be given away.
+      </p>
+      <h2>What's the catch?</h2>
+      <p>No catch-- I want Solana to be successful, so I created this little service to give you a few coins to start with.<br/>
+         -- gavin
+      </p>
+    </div>
+ <!--End of Content-->
+    <div class="footer">
+    Created by Gavin Andresen | Design:www.yomena.de| Photo:mira66 | CC:Attribution                                         
+<!--End of footer-->
+    </div>
+    <script>
+      function checkForm() {
+        var address = document.getElementById('id_address').value;
+        var captchaResponse = document.querySelector('input[name="recaptcha_response_field"]').value;
+        
+        if (address.trim() === '') {
+          alert('Please enter your Solana address.');
+          return false;
+        }
+        
+        if (captchaResponse.trim() === '' || captchaResponse === 'manual_challenge') {
+          alert('Please solve the CAPTCHA.');
+          return false;
+        }
+        
+        alert('5 SOL sent to ' + address);
+        return false; // Prevent actual form submission
+      }
+    </script>
+  </body>
+</html>
