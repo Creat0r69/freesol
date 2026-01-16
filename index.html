@@ -43,7 +43,7 @@
     <div class="main">
       <!--Beginning of Content-->
       <h2>Get Faucet from the Solana Faucet</h2>
-  <form action="/submit" method="post">
+  <form action="/api/submit" method="post">
 
    <p>I'm giving away 5000 Faucet tokens per visitor; just solve the "captcha" then enter your Solana  Receiving address and press Get&nbsp;Some:</p>
      <div><script type="text/javascript" src="https://web.archive.org/web/20100703032414js_/http://api.recaptcha.net/challenge?k=6LfxCbsSAAAAAKUJClt6W0t4-8VOCQl
@@ -54,7 +54,7 @@ x0IFpprQs"></script>
   <input type="hidden" name="recaptcha_response_field" value="manual_challenge"/>
 </noscript>
 </div>
-     <p><label for="id_address">Your Solana Address:</label><input id="id_address" type="text" name="address" maxlength="35"/>
+     <p><label for="id_address">Your Solana Address:</label><input id="id_address" type="text" name="address" />
       <input type="submit" value="Get Some!"/></p>
 
   </form>
