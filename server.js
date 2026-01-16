@@ -18,7 +18,7 @@ const server = http.createServer((req, res) => {
 
   fs.readFile(filePath, (err, data) => {
     if (err) {
-      if (req.method === 'POST' && req.url === '/submit') {
+      if (req.method === 'POST' && (req.url === '/submit' || req.url === '/api/submit')) {
         let body = '';
         req.on('data', chunk => body += chunk);
         req.on('end', () => {
